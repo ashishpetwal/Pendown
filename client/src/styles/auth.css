@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Poppins';
+}
+
+.login-container {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+
+.login-image img{
+    height: 20rem;
+}
+
+.login-details{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 22rem;
+}
+
+.login-details h2{
+    font-weight: 800;
+}
+
+input[type=text]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+input[type=email]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+input[type=password]{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid grey;
+}
+
+button[type=submit]{
+    border: none;
+    color: white;
+    background-color: #6c63ff;
+    border-radius: 4px;
+    padding: .8rem 1.6rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+button[type=submit]:hover{
+    background-color: #6159fc;
+}
+
+.login-details a{
+    color: black;
+}
+
+.login-details i{
+    padding: 2%;
+}
+
+/* Note Item Styling */
+
+.notes{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.noteitem{
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
+    border-radius: .8rem;
+    background-color: rgb(250, 250, 250);
+    padding: 1rem;
+    transition: .5s;
+    box-shadow: 2px 2px 1px #6c63ff;
+}
+
+.noteitem:focus{
+    background-color: #6c63ff;
+    scale: calc(1.05);
+    color: white;
+}
+
+.noteitem h5{
+    font-weight: bolder;
+}
+
+.noteitem .icons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Home */
+
+.homepage{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+
+.addnote{
+    position: fixed;
+    left: 50%;
+}
+
+.addnote img{
+    height: 15rem;
+}
+
+.addNote-fields{
+    margin-top: 2rem;
+}
+
+.addNote-fields input:nth-child(1){
+    border-bottom: 1px solid rgb(237, 235, 235);
+    font-size: 48px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.addNote-fields textarea{
+    border: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    border-bottom: 1px solid rgb(237, 235, 235);
+    font-size: 16px;
+    font-weight: 500;
+    margin: 1rem 0;
+    min-width: 35rem;
+    color: grey;
+}
+.addNote-fields input:nth-child(3){
+    display: block;
+    border-bottom: 1px solid rgb(237, 235, 235);
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+/* Landing Page */
+
+.header{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.header .navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
+
+.header .navbar .nav-menu{
+    display: flex;
+    list-style-type: none;
+}
+
+.header .navbar .nav-menu li{
+    padding: 0 .8rem;
+}
+
+.header .navbar .login-btn button{
+    border: none;
+    outline: none;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 1rem;
+    padding: .4rem 1.2rem;
+}
+
+.header .navbar .login-btn button:hover{
+    background-color: #6159fc;
+}
+
+.header .head-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rem;
+    border-bottom: 4px solid rgb(53, 53, 53);
+    padding-bottom: 5rem;
+}
+
+.header .head-content .head-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 30rem;
+    gap: 2rem;
+}
+
+.header .head-content .head-text .btns{
+    display: flex;
+    gap: 2rem;
+}
+
+.header .head-content .head-text .btns .btn-1 button{
+    border: none;
+    outline: none;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 1rem;
+    padding: .4rem 1.2rem;
+}
+
+.header .head-content .head-text .btns .btn-1 button:hover{
+    background-color: #6159fc;
+}
+
+.header .head-content .head-text .btns .btn-2 button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: .1px solid #6c63ff;
+    color: #6c63ff;
+    border-radius: 1rem;
+    padding: .4rem 1.2rem;
+    transition: .5s;
+}
+
+.header .head-content .head-text .btns .btn-2 button:hover{
+    background-color: #6c63ff;
+    color: white;
+}
+
+.header .head-content .head-img img{
+    height: 20rem;
+    filter: drop-shadow(2px 2px 6px rgb(48, 48, 74));
+}
+
+.header .head-content .head-text h2{
+    font-size: 3.6rem;
+}
+
+.organize{
+    color: red;
+}
+
+.easy{
+    color: #6c63ff;
+}
+
+/* About Us */
+
+.about-us{
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid rgb(53, 53, 53);
+}
+.about-us h2{
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.about-us .about-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-us .about-item{
+    padding: 5rem 0;
+}
+
+.about-us .about-item .about-text{
+    max-width: 40rem;
+    text-align: center;
+}
+
+.about-us .about-item .about-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.about-us .about-item .about-img img{
+    height: 15rem;
+    filter: drop-shadow(2px 2px 6px rgb(48, 48, 74));
+}
